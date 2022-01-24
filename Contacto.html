@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Artes Visuales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4d22c8f0d7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="images/logo_preview_rev_1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="cursos.html">CURSOS</a></li>
+                    <!--<li><a href="Blog.html">BLOG</a></li>-->
+                        <li><a href="nosotros.html">NOSOTROS</a></li>
+                        <li><a href="Contacto.html">CONTACTO</a></li>
+                    </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contacto</h1>
+    </section>
+    
+    <!--Contacto-->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.6551111176677!2d-54.6485076!3d-25.51654639999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6856f68b52ba5%3A0x35387262b304a420!2sAmelia%20-%20Artes%20Visuales!5e0!3m2!1ses!2spy!4v1633645396443!5m2!1ses!2spy"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contacto">
+        <div class="row">
+            <div class="contacto-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                        <span>
+                            <h5>Esq. entre Avda Los Rosales y Padre Guillermo Balman</h5>
+                            <p>Barrio San josé, Ciudad del este, Paraguay</p>
+                        </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+595 973 201-245</h5>
+                        <p>Lunes a Sábado, 8AM a 18PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5>ameliaartesvisuales@gmail.com</h5>
+                        <p>E-mail de contacto</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contacto-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Ingresa tu nombre y apellido" required>
+                    <input type="email" name="email" placeholder="Ingresa tu email" required>
+                    <input type="tema" name="tema" placeholder="Ingresa tu tema" required>
+                    <textarea rows="8" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <button type="enviar" class="hero-btn red-btn">Enviar mensaje</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Footer-->
+
+<section class="footer">
+    <a href="Contacto.html" class="hero-btn1">Visítanos para saber más</a>
+
+    <div class="icons">
+        <a style="text-decoration: none;" href="https://www.facebook.com/AmeliaArtesVisuales/" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://twitter.com/artes_amelia" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://www.instagram.com/artes_amelia/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://web.whatsapp.com/send?phone=595973201245" target="_blank">
+
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <h4>2021 AMELIA ARTES VISUALES</h4>
+
+    <div class="madewith">
+        <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.instagram.com/icoramirez/" class="hero-btn3"
+                target="blank_">@icoramirez</a></p>
+    </div>
+
+</section>
+ <!--JavaScrip for Toggle Menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>    
+
+</body>
+</html>

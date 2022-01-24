@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Artes Visuales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4d22c8f0d7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"> <img src="images/logo_preview_rev_1.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()">
+            </i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                    <!--<li><a href="Blog.html">BLOG</a></li>-->
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="Contacto.html">CONTACTO</a></li>
+                </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Cursos</h1>
+    </section>
+
+    <!--Course-->
+    <section class="course">
+        <h1>Nuestros cursos y talleres</h1>
+        <div class="row">
+            
+            <div class="fotos-col">
+                <img src="images/conversatorio.jpeg">
+                <h3>Conversatorio</h3>
+                <p>Ingresa a mi perfil de instagram para hacer parte del conversatorio "Del pasatiempo a la profesión" haciendo click en el enlace abajo!</p>
+                <a href="https://www.instagram.com/mariabelenartistavisual/" target="_blank" style="text-decoration: none;"
+                class="hero-btn2">Acceder al conversatorio <i class="fab fa-instagram"></i></a>
+            </div>
+    
+    
+    
+            <div class="fotos-col">
+    
+                <img src="images/coloniaimage.jpeg">
+                <h3>Colonia artística de vacaciones</h3>
+                <p>Dibujo, pintura, manualidades y mucho más. Accede al link para reservar tu lugar en la colonia artística de vacaciones!</p>
+                <a href="https://web.whatsapp.com/send?phone=595973201245" target="_blank" style="text-decoration: none;"
+                class="hero-btn2">Reservar mi lugar! <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="row">
+        
+            <div class="fotos-col">
+                <img src="images/tiedye.jpg">
+                <h3>Tie Dye sobre remeras</h3>
+                <p>Vas a aprender a como trabajar en los diferentes efectos al colorear tu remera.
+                    El taller será el <b>sábado 30 de octubre, a las 15:30 hs.</b> en el taller "Amelia" del Barrio San
+                    José.</p>
+                <a style="text-decoration: none;" class="hero-btn2">Inscripciones cerradas</a>
+        
+                <!--href="https://web.whatsapp.com/send?phone=595973201245" target="_blank" <i
+                                class="fab fa-whatsapp"></i>-->
+            </div>
+        
+        
+        
+            <div class="fotos-col">
+        
+                <img src="images/planteras.jpg">
+                <h3>Planteritas pintadas a mano</h3>
+                <p>Taller de planteritas pintadas a mano dirigido a jovenes, niños y adultos. donde aprenderás pintura
+                    artística sobre planteritas realizadas manualmente. El taller será el <b>sábado 25 de septiembre, a las
+                        15:00 hs.</b> en el taller "Amelia" del Barrio San José.</p>
+                <a style="text-decoration: none;" class="hero-btn2">Inscripciones cerradas</a>
+            </div>
+        </div>
+    
+    </section>
+    
+
+    
+<!--Footer-->
+
+<section class="footer">
+
+
+
+    <a href="Contacto.html" class="hero-btn1">Visítanos para saber más</a>
+
+    <div class="icons">
+        <a style="text-decoration: none;" href="https://www.facebook.com/AmeliaArtesVisuales/" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://twitter.com/artes_amelia" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://www.instagram.com/artes_amelia/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://web.whatsapp.com/send?phone=595973201245" target="_blank">
+
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <h4>2021 AMELIA ARTES VISUALES</h4>
+
+    <div class="madewith">
+        <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.instagram.com/icoramirez/" class="hero-btn3" target="blank_">@icoramirez</a></p>
+    </div>
+
+</section>
+
+</section>
+ <!--JavaScrip for Toggle Menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>    
+
+</body>
+</html>

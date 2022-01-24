@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Artes Visuales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4d22c8f0d7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"> <img src="images/logo_preview_rev_1.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="Contacto.html">CONTACTO</a></li>
+                </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Blog</h1>
+    </section>
+
+    <!--Contenido del blog-->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/soloamelia_preview_rev_1.png">
+                <h2>Blog</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ab quo, architecto amet doloremque a neque quisquam officia aperiam nemo eveniet consectetur omnis cupiditate corrupti sapiente ad sed deserunt et?</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore enim voluptatum quasi quaerat accusamus laudantium, eum, doloremque non molestiae ipsum laborum pariatur iure quas. Inventore sequi error nulla adipisci dolore.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus itaque corrupti neque sit pariatur vel reprehenderit vero id non est, minima nisi. Cupiditate itaque dolorum repellendus facere consequatur officiis tempora.</p>
+
+                <div class="comment-box">
+                    <h3>Deja tu comentario</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Nombre">
+                        <input type="email" placeholder="Email">
+                        <textarea rows="5" placeholder="Tu comentario"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Comentar</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Cursos realizados</h3>
+                <div>
+                    <span>Taller de pintura</span>
+                    <span>2</span>
+                </div>
+                <div>
+                    <span>Taller de dibujo</span>
+                    <span>3</span>
+                </div>
+                <div>
+                    <span>Taller de manualidades</span>
+                    <span>1</span>
+                </div>
+                <div>
+                    <span>Obras de artes sobre pedidos</span>
+                    <span>1</span>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+<!--Footer-->
+
+<section class="footer">
+    <h4>NOSOTROS</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem hic quaerat deleniti, consequatur, amet iure quas optio harum <br>mollitia fugiat laboriosam! Eaque adipisci rerum amet. Exercitationem placeat repellendus distinctio veritatis.</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-whatsapp"></i>
+
+    </div>
+    <p>Made with <i class="fas fa-heart"></i> by icoramirez</p>
+
+</section>
+ <!--JavaScrip for Toggle Menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>    
+
+</body>
+</html>

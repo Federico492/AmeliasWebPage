@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Artes Visuales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4d22c8f0d7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="images/logo_preview_rev_1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="cursos.html">CURSOS</a></li>
+                        <!--<li><a href="Blog.html">BLOG</a></li>-->
+                        <li><a href="nosotros.html">NOSOTROS</a></li>
+                        <li><a href="Contacto.html">CONTACTO</a></li>
+                    </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Nosotros</h1>
+    </section>
+
+<!--Logros-->
+    <section class="Logros">
+        <h1>¡Hola!, ¡Soy María Belén!</h1>
+        <p>Hace 2 años creé el taller Amelia como un emprendimiento local con el objetivo de llevar el arte a todas las personas de la comunidad, iniciamos con una pequeña cantidad de personas, hoy día somos más de 20 alumnos que componen esta gran familia</p>
+
+        <div class="row">
+            <div class="talleramelia-col">
+                <img src="images/docente.jpg">
+                <h3>Docencia</h3>
+                <p>Docente de la Escuela Superior de Bellas Artes de la UNE. Experiencia en las asignaturas de pinturas,
+                    ciber arte y cinematografía.</p>
+            </div>
+            <div class="talleramelia-col">
+                <img src="images/charlas.jpg">
+                <h3>Charlas a jóvenes y adultos</h3>
+                <p>Referente a las artes visuales, capacidades especiales y vocación.</p>
+            </div>
+            <div class="talleramelia-col">
+                <img src="images/jovenesinv.jpg">
+                <h3>Nuestros logros</h3>
+                <p>En el año 2018 recibí el premio al "Mejor trabajo en la modalidad de exposición en póster en producción
+                    artística
+                    y cultural" en la XXV Jornada de jóvenes investigadores de la AUGM - UNI. Por mi trabajo denominado
+                    "Aplicación
+                    de pinturas sensoriales en personas no videntes - Estudio de caso"</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Nosotros contenido-->
+    <section class="about-us"> 
+        <div class="row">
+            <div class="about-col">
+                <h1>Amelia Artes Visuales</h1>
+                <p>El taller "Amelia" nace de la idea de llevar a niños, jóvenes y adultos el arte paraguayo por medio de la pintura, manualidades y edición. Nos centramos en otorgarte diferentes tipos de cursos y talleres para que tú puedas conocer un poco más sobre nuestra cultura, tecnología de edición y diseños. Comprometidos con la calidad y con el deseo de ser una empresa líder en el arte en Ciudad del Este, la atención personalizada es nuestro mayor valor. Acercate y conoce un poco más de nuestro taller.</p>
+                <a href="cursos.html" class="hero-btn red-btn">Explorar</a>
+            </div>
+            <div class="about-col">
+                <img src="images/jj.jpg">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--Footer-->
+
+    <section class="footer">
+    
+    
+    
+        <a href="Contacto.html" class="hero-btn1">Visítanos para saber más</a>
+    
+        <div class="icons">
+            <a style="text-decoration: none;" href="https://www.facebook.com/AmeliaArtesVisuales/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a style="text-decoration: none;" href="https://twitter.com/artes_amelia" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a style="text-decoration: none;" href="https://www.instagram.com/artes_amelia/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a style="text-decoration: none;" href="https://web.whatsapp.com/send?phone=595973201245" target="_blank">
+    
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    
+        <h4>2021 AMELIA ARTES VISUALES</h4>
+    
+        <div class="madewith">
+            <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.instagram.com/icoramirez/" class="hero-btn3" target="blank_">@icoramirez</a></p>
+        </div>
+    
+    </section>
+ <!--JavaScrip for Toggle Menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>    
+
+</body>
+</html>
